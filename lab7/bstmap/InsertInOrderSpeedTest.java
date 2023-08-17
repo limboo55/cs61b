@@ -46,7 +46,7 @@ public class InsertInOrderSpeedTest {
      * Returns time needed to put N strings into a Map61B in increasing order.
      * makes use of StringUtils.nextString(String s)
      */
-    public static double insertInOrder(Map61B<String, Integer> map61B, int N) {
+    public static double insertInOrder(Map61B<String, Integer> map61B, int N)  {
         Stopwatch sw = new Stopwatch();
         String s = "cat";
         for (int i = 0; i < N; i++) {
@@ -139,3 +139,4 @@ public class InsertInOrderSpeedTest {
     }
 
 }
+

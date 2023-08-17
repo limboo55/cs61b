@@ -23,7 +23,7 @@ public interface Map61B<K, V> extends Iterable<K> {
     int size();
 
     /* Associates the specified value with the specified key in this map. */
-    void put(K key, V value);
+    void put(K key, V value) ;
 
     /* Returns a Set view of the keys contained in this map. Not required for Lab 7.
      * If you don't implement this, throw an UnsupportedOperationException. */
