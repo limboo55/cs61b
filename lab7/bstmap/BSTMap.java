@@ -96,10 +96,13 @@ public class BSTMap <K extends Comparable<K>,V> implements Map61B<K,V>  {
     public Iterator<K> iterator() {
         throw new UnsupportedOperationException();
     }
-    public void printInOrder(node cur){
+    public void printInOrder(){
+        printInOrder(root);
+    }
+    private void printInOrder(node cur){
         if (cur == null) return;
         printInOrder(cur.left);
-        System.out.println(String.format("key:%s,value:%s",cur.key,cur.value));
+        System.out.printf("key:%s,value:%s%n",cur.key,cur.value);
         printInOrder(cur.right);
     }
 
